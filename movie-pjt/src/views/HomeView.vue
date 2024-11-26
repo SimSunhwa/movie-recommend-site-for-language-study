@@ -253,7 +253,7 @@ const features = [
   {
     icon: '🎬',
     title: '난이도 분류 AI 모델 활용 영화 추천',
-    description: '사용자의 영어 수준에 맞는 영화를 추천합니다.'
+    description: 'AI 모델로 분류된 영화의 난이도를 통해서 사용자의 영어 수준에 맞는 영화를 추천합니다.'
   },
   {
     icon: '🎯',
@@ -267,18 +267,18 @@ const features = [
   },
   {
     icon: '🏆',
-    title: '학습 동기부여 향상을 위한 시스템',
-    description: '경험치, 레벨 시스템을 통한 학습 동기부여를 제공합니다.'
+    title: '학습 동기부여 향상 시스템',
+    description: '경험치, 레벨 시스템을 통한 학습 동기���여를 제공합니다. 경험치 포인트를 쌓아가며 티어를 상승 시킬 수 있습니다.'
   },
   {
     icon: '👥',
     title: '커뮤니티 시스템',
-    description: '다른 학습자들과 영화에 대한 후기, 언어 학습에 대한 의견을 나눌 수 있습니다.'
+    description: '다른 학습자들과 영화에 대한 후기, 언어 학습에 대한 의견을 나눌 수 있습니다. 서로 다양한 팁과 정보를 주고 받으며 학습 효과를 높여보세요.'
   },
   {
     icon: '💬',
-    title: '학습을 돕기 위한 챗봇 기능',
-    description: '학습 중 도움이 필요한 경우 챗봇을 통해 학습 도움을 받을 수 있습니다.'
+    title: '학습을 돕는 챗봇',
+    description: '학습 중 도움이 필요한 경우 챗봇을 통해 학습 도움을 받을 수 있습니다. 표현, 작문, 문법 등 질문을 통해 학습 효율성을 증대합니다.'
   }
 ]
 
@@ -295,9 +295,9 @@ const navigateToLogin = () => {
 // 기대 효과 데이터 함수 추가
 const getBenefitTitle = (index) => {
   const titles = [
-    '빠른 언어 습득',
     '맞춤형 학습',
-    '문화적 이해',
+    '몰입도 높은 학습 경험',
+    '학습 맞춤 사용자 경험',
     '커뮤니티 학습'
   ]
   return titles[index - 1]
@@ -305,10 +305,10 @@ const getBenefitTitle = (index) => {
 
 const getBenefitDescription = (index) => {
   const descriptions = [
-    '실제 영화 속 대화를 통해 자연스러운 언어를 빠르게 습득할 수 있습니다',
-    '개인의 수준과 관심사에 맞는 최적화된 학습 경험을 제공합니다',
-    '영화를 통해 언어뿐만 아니라 문화적 맥락까지 자연스럽게 이해할 수 있습니다',
-    '다른 학습자들과 함께 동기부여를 받으며 성장할 수 있습니다'
+    'AI 기반 추천 및 최적화 된 사용자 경험으로 개인의 학습 수준에 맞는 최고의 학습 경험을 제공합니다',
+    '영화 콘텐츠와 언어 학습을 결합하여 보다 몰입도 높은 학습 경험을 제공합니다',
+    '학습 하기 편리한 환경을 제공하여 학습에서의 시너지 효과를 증대합니다',
+    '커뮤니티를 통해 사용자들과 상호작용하며 지속적으로 학습을 진행할 수 있습니다.'
   ]
   return descriptions[index - 1]
 }
@@ -1046,5 +1046,41 @@ const swiperOptions = {
 
 .login-link:hover {
   color: var(--point-rose);
+}
+
+/* 기대 효과 카드 내부 텍스트 스타일 수정 */
+.benefit-card h3 {
+  font-size: 2.2rem; /* 제목 크기 증가 */
+  margin-bottom: 1.5rem;
+  color: white;
+  font-weight: 700;
+}
+
+.benefit-card p {
+  font-size: 1.4rem; /* 본문 크기 증가 */
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.benefit-number {
+  font-size: 4rem; /* 번호 크기 증가 */
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 1.5rem;
+}
+
+/* 반응형 대응 */
+@media (max-width: 768px) {
+  .benefit-card h3 {
+    font-size: 1.8rem;
+  }
+  
+  .benefit-card p {
+    font-size: 1.2rem;
+  }
+  
+  .benefit-number {
+    font-size: 3.5rem;
+  }
 }
 </style>
