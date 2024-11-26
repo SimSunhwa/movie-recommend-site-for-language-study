@@ -9,7 +9,7 @@
            :initial="{ opacity: 0 }"
            :enter="{ opacity: 1, transition: { delay: 800 } }">
         <h1 class="main-title">Movie Language</h1>
-        <p class="sub-title">영화로 배우는 새로운 언어 학습 경험</p>
+        <p class="sub-title">내 학습레벨에 맞는 영화로 영어를 배워보세요</p>
         <button class="start-button" 
                 @click="navigateToLogin"
                 v-motion
@@ -252,33 +252,33 @@ const heroImages = [
 const features = [
   {
     icon: '🎬',
-    title: '영화 장면 학습',
-    description: '실제 영화 속 대사와 상황을 통해 자연스러운 언어 표현을 배웁니다.'
+    title: '난이도 분류 AI 모델 활용 영화 추천',
+    description: '사용자의 영어 수준에 맞는 영화를 추천합니다.'
   },
   {
     icon: '🎯',
-    title: '맞춤형 학습',
-    description: '사용자의 수준과 관심사에 맞는 영화 콘텐츠를 추천받습니다.'
+    title: '편리한 사용자 경험',
+    description: '보다 편리한 사용을 위한 검색, 다중 필터 및 ott 이동 기능을 지원합니다.'
   },
   {
     icon: '📝',
-    title: '단어장 관리',
-    description: '영화에서 학습한 새로운 단어와 표현을 체계적으로 관리할 수 있습니다.'
+    title: '학습을 위한 단어장 기능 제공',
+    description: '영화에서 학습한 새로운 단어와 표현을 단어장을 사용해 체계적으로 관리할 수 있습니다.'
   },
   {
-    icon: '🗣️',
-    title: '발음 연습',
-    description: '영화 속 원어민의 발음을 따라하며 실전 회화 능력을 향상시킵니다.'
-  },
-  {
-    icon: '📊',
-    title: '학습 분석',
-    description: '개인별 학습 진행 상황과 성취 한에 확인할 수 있습니다.'
+    icon: '🏆',
+    title: '학습 동기부여 향상을 위한 시스템',
+    description: '경험치, 레벨 시스템을 통한 학습 동기부여를 제공합니다.'
   },
   {
     icon: '👥',
-    title: '커뮤니티',
-    description: '다른 학습자들과 함께 영화와 언어에 대한 의견을 나눌 수 있습니다.'
+    title: '커뮤니티 시스템',
+    description: '다른 학습자들과 영화에 대한 후기, 언어 학습에 대한 의견을 나눌 수 있습니다.'
+  },
+  {
+    icon: '💬',
+    title: '학습을 돕기 위한 챗봇 기능',
+    description: '학습 중 도움이 필요한 경우 챗봇을 통해 학습 도움을 받을 수 있습니다.'
   }
 ]
 
