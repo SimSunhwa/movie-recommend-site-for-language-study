@@ -3,6 +3,7 @@
     <div class="basic-info">
       <div class="movie-header">
         <h3 class="movie-title">{{ movieInfo.title }}</h3>
+        <span class="movie-level">{{ movieInfo.difficulty }}</span>
       </div>
       <div class="movie-subinfo">
         <span class="movie-release-date">({{ movieInfo.release_date }})</span>
@@ -127,12 +128,29 @@ const store = useMovieStore()
 
 .movie-header {
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.movie-level {
+  background-color: rgba(255, 255, 255, 0.15);
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
 }
 
 .movie-title {
   font-size: 2.5rem;
   margin: 0;
   color: #fff;
+  flex: 1;
 }
 
 .movie-subinfo {
