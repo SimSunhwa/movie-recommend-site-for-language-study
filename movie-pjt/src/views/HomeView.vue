@@ -8,7 +8,7 @@
            v-motion
            :initial="{ opacity: 0 }"
            :enter="{ opacity: 1, transition: { delay: 800 } }">
-        <h1 class="main-title">Movie Language</h1>
+        <h1 class="main-title">MoviENg!</h1>
         <p class="sub-title">내 학습레벨에 맞는 영화로 영어를 배워보세요</p>
         <button class="start-button" 
                 @click="navigateToLogin"
@@ -268,7 +268,7 @@ const features = [
   {
     icon: '🏆',
     title: '학습 동기부여 향상 시스템',
-    description: '경험치, 레벨 시스템을 통한 학습 동기���여를 제공합니다. 경험치 포인트를 쌓아가며 티어를 상승 시킬 수 있습니다.'
+    description: '경험치, 레벨 시스템을 통한 학습 동기부여를 제공합니다. 경험치 포인트를 쌓아가며 티어를 상승 시킬 수 있습니다.'
   },
   {
     icon: '👥',
